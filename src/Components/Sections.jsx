@@ -1,13 +1,13 @@
 
 
 
-export function Hero({heroText}){
+export function Hero({heroText, heroClassName}){
 
 return(
-	<div className='absolute top-1/5 left-1/2 
-		transform -translate-x-1/2 -translate-y-1/2
-		 text-8xl text-center sm:text-5xl
-		 '>{heroText}</div>
+	<div className={`absolute top-1/2 left-1/2 px-3
+				transform -translate-x-1/2 -translate-y-1/2
+				 text-center sm:text-2xl 
+				${heroClassName} `}>{heroText}</div>
 	)
 
 }
@@ -66,3 +66,28 @@ export function Label2({number, h2, p}){
 		</div>
 		)
 }
+
+export function Section3(
+
+{content, img, h2, p, imgclassName, h2className, pclassName}
+
+
+	){
+
+
+return(
+<div className= {`px-7 py-10 text-center text-white ${content}`}>
+	
+<h2  className={`text-2xl mb-5 ${h2className}`}>{h2}</h2>
+<p  className={`font-light text-md ${pclassName}`}>{p}</p>
+
+</div>
+
+
+
+
+	)
+
+}
+
+export function 5

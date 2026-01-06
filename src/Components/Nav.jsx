@@ -1,5 +1,5 @@
 import Button from './Buttons'
-import menuIcon from '../assets/hamburger.svg'
+import {menuIcon} from '../Components/svg.jsx'
 export function Nav1({
 
   ulclassName,
